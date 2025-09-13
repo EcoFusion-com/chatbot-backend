@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: eco-fusion-chatbot
+    env: python
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      rasa train
+    startCommand: rasa run --enable-api --cors "*" --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: RASA_ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+    healthCheckPath: /status
+    plan: starter
+    region: oregon
+    disk:
+      name: rasa-models
+      mountPath: /opt/render/project/models
+      sizeGB: 1

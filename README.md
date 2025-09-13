@@ -4,9 +4,10 @@ A comprehensive, production-ready Rasa-based chatbot for Eco Fusion, specializin
 
 ## 🚀 Live Demo
 
-- **Chatbot API**: [https://ecofusion-chatbot.herokuapp.com](https://ecofusion-chatbot.herokuapp.com)
+- **Chatbot API**: [https://ecofusion-chatbot.onrender.com](https://ecofusion-chatbot.onrender.com)
 - **Web Interface**: [https://ecofusion.vercel.app](https://ecofusion.vercel.app) (with integrated chatbot)
-- **API Documentation**: [https://ecofusion-chatbot.herokuapp.com/docs](https://ecofusion-chatbot.herokuapp.com/docs)
+- **API Documentation**: [https://ecofusion-chatbot.onrender.com/docs](https://ecofusion-chatbot.onrender.com/docs)
+- **Render Deployment Guide**: [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md)
 
 ## 🎯 Core Services
 
@@ -386,6 +387,15 @@ docker-compose up -d
 # Or run individually
 docker run -p 5005:5005 eco-fusion-chatbot
 ```
+
+### **Render Deployment (Recommended)**
+
+1. **Connect Repository**: Link your GitHub repository to Render
+2. **Configure Service**: Set up as Python web service
+3. **Set Environment Variables**: Add all required variables
+4. **Deploy**: Render will automatically build and deploy
+
+📖 **Detailed Guide**: [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md)
 
 ### **Heroku Deployment**
 
