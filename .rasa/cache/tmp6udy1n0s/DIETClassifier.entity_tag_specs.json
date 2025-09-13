@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-budget",
+      "2": "I-budget",
+      "3": "L-budget",
+      "4": "U-budget",
+      "5": "B-industry",
+      "6": "I-industry",
+      "7": "L-industry",
+      "8": "U-industry",
+      "9": "B-technology",
+      "10": "I-technology",
+      "11": "L-technology",
+      "12": "U-technology",
+      "13": "B-timeline",
+      "14": "I-timeline",
+      "15": "L-timeline",
+      "16": "U-timeline",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-budget": 1,
+      "I-budget": 2,
+      "L-budget": 3,
+      "U-budget": 4,
+      "B-industry": 5,
+      "I-industry": 6,
+      "L-industry": 7,
+      "U-industry": 8,
+      "B-technology": 9,
+      "I-technology": 10,
+      "L-technology": 11,
+      "U-technology": 12,
+      "B-timeline": 13,
+      "I-timeline": 14,
+      "L-timeline": 15,
+      "U-timeline": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

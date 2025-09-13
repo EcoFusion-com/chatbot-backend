@@ -1,0 +1,293 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_services
+  - ask_pricing
+  - ask_process
+  - ask_requirements_info
+  - ask_ai_automation
+  - ask_iot_solutions
+  - ask_fullstack_dev
+  - ask_projects_portfolio
+  - ask_programming_languages
+  - ask_frameworks
+  - ask_csharp
+  - ask_cloud_technologies
+  - ask_consultation
+  - ask_working_hours
+  - ask_company_founded
+  - ask_company_info
+  - ask_github_profile
+  - connect_human
+  - handoff_request
+  - ask_quote
+  - book_meeting
+  - provide_requirements
+  - nlu_fallback
+  - bot_challenge
+  - mood_great
+  - mood_unhappy
+  - affirm
+  - deny
+  - channel_switch
+
+entities:
+  - industry
+  - budget
+  - timeline
+  - technology
+  - project_size
+  - compliance
+
+slots:
+  industry:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: industry
+  budget:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: budget
+  timeline:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: timeline
+  technology:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: technology
+  project_size:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: project_size
+  compliance:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: compliance
+  llm_fallback_used:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  preferred_channel:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Hi! I'm Eco Fusion's virtual assistant. How can I help you today?"
+  utter_goodbye:
+    - text: "Thanks for chatting with Eco Fusion. Have a great day!"
+  utter_services:
+    - text: "Eco Fusion specializes in AI & Automation, IoT Solutions, and Full-Stack Development."
+  utter_pricing:
+    - text: "Our pricing depends on the scope. Share your requirements for a detailed quote."
+  utter_process:
+    - text: "We follow agile methodology, ensuring fast delivery and scalability."
+  utter_ask_requirements:
+    - text: "Great! Could you share your industry, budget, timeline, and preferred technology?"
+  utter_confirm_requirements:
+    - text: |
+        Here is what I have:
+        - Industry: {industry}
+        - Budget: {budget}
+        - Timeline: {timeline}
+        - Technology: {technology}
+        If this looks good, I can set up a consultation. 📅
+  utter_consultation_link:
+    - text: "You can book a consultation here: https://calendar.google.com/placeholder"
+  utter_ask_missing_info:
+    - text: "Please provide any missing details: industry, budget, timeline, technology."
+  utter_iamabot:
+    - text: "I am a virtual assistant powered by Rasa, here to help with Eco Fusion."
+  utter_happy:
+    - text: "Great to hear! How else can I assist you?"
+  utter_cheer_up:
+    - text: "I'm here to help. We can explore options in AI, IoT, or development that fit your needs."
+  utter_did_that_help:
+    - text: "Did that help?"
+  utter_requirements_info:
+    - text: "To get started, please share your industry, budget, timeline, and preferred technology. I'll guide you from there."
+  utter_ai_automation:
+    - text: |
+        Our AI & Automation services include AI agents, chatbots, predictive analytics, and RPA. We integrate with CRMs/ERPs, build voice assistants, and automate workflows like data entry and invoices. We tailor solutions for SMBs and enterprises with clear timelines and ROI.
+  utter_iot_solutions:
+    - text: |
+        Our IoT solutions cover smart home, industrial IoT, energy monitoring, predictive maintenance, secure device integration, and real-time dashboards. We deliver end-to-end: hardware selection, sensors, connectivity, cloud, and apps.
+  utter_fullstack_dev:
+    - text: |
+        We build full-stack apps and SaaS: responsive frontends, scalable backends, APIs, payments, dashboards, and cloud. Stacks include React, Django, Node, and cloud-native patterns. We ensure performance, security, and maintainability.
+  utter_projects_portfolio:
+    - text: |
+        I have 32+ projects on GitHub showcasing diverse technical skills! Here are some highlights from my actual work:
+
+        🤖 **AI & Machine Learning Projects:**
+        - **Advanced Stock Pattern Prediction** - LSTM with Attention Mechanism in TensorFlow
+        - **Million-Parameter LLM** - Built from scratch using Python
+        - **BERT Implementation** - TensorFlow code and pre-trained models
+        - **AI Text Prediction Dashboard** - Real-time prediction with Hugging Face
+
+        📱 **Mobile Applications:**
+        - **Elderly Care Companion** - Flutter app for elderly support with medication management and AI conversations
+
+        🌐 **Web Applications:**
+        - **Valentine's Day Experiment** - Interactive web app with cute bear interface
+
+        💻 **Full-Stack & Other Projects:**
+        - Various repositories demonstrating expertise in multiple technologies
+
+        You can view all my projects at: https://github.com/Abdullah007bajwa
+        
+        Would you like to discuss any specific project or technology stack for your business needs?
+  utter_programming_languages:
+    - text: |
+        We're proficient in multiple programming languages and technologies:
+        
+        **Frontend:** JavaScript, TypeScript, React, Vue.js, Angular
+        **Backend:** Python, Node.js, Java, C#, PHP
+        **Mobile:** React Native, Flutter
+        **Database:** PostgreSQL, MongoDB, MySQL, Redis
+        **DevOps:** Docker, Kubernetes, CI/CD
+        
+        We choose the best technology stack based on your project requirements, scalability needs, and team expertise.
+  utter_frameworks:
+    - text: |
+        We work with modern frameworks and technologies:
+        
+        **Frontend Frameworks:** React, Vue.js, Angular, Next.js
+        **Backend Frameworks:** Django, Express.js, ASP.NET Core, Laravel, Flask
+        **Mobile:** React Native, Flutter
+        **CMS:** WordPress, Strapi
+        **E-commerce:** Shopify, WooCommerce
+        
+        Our expertise includes cloud-native development, microservices architecture, and scalable solutions.
+  utter_csharp:
+    - text: |
+        Yes, absolutely! We have extensive experience with C# and .NET development:
+        
+        **C# & .NET Expertise:**
+        - ASP.NET Core web applications
+        - .NET desktop applications
+        - Azure cloud integration
+        - Entity Framework
+        - WPF and WinForms
+        - .NET MAUI for cross-platform apps
+        
+        We've built enterprise applications, APIs, and cloud solutions using C# and .NET technologies.
+  utter_cloud_technologies:
+    - text: |
+        We're experts in cloud technologies and deployment:
+        
+        **Cloud Platforms:** AWS, Azure, Google Cloud Platform
+        **Containerization:** Docker, Kubernetes
+        **Serverless:** AWS Lambda, Azure Functions
+        **Databases:** AWS RDS, Azure SQL, MongoDB Atlas
+        **CDN & Storage:** AWS S3, Azure Blob Storage
+        **Monitoring:** CloudWatch, Azure Monitor
+        
+        We ensure scalable, secure, and cost-effective cloud deployments for all our projects.
+  utter_consultation:
+    - text: |
+        Yes! We offer free consultation sessions to discuss your project requirements. During our consultation, we'll:
+        
+        📋 **Assess your needs and goals**
+        💡 **Provide technical recommendations**
+        📊 **Discuss project scope and timeline**
+        💰 **Give you a detailed cost estimate**
+        🚀 **Outline the development approach**
+        
+        Book your free consultation by clicking the "Get Started" button or contact us directly. We're here to help bring your ideas to life!
+  utter_working_hours:
+    - text: |
+        Our working hours are:
+        
+        **Monday - Friday:** 9:00 AM - 6:00 PM (EST)
+        **Saturday:** 10:00 AM - 4:00 PM (EST)
+        **Sunday:** Closed
+        
+        We're also available for emergency support and urgent consultations outside these hours. Feel free to reach out anytime, and we'll get back to you promptly!
+  utter_company_founded:
+    - text: |
+        Eco Fusion was founded in 2021 with a vision to create sustainable, innovative technology solutions. We started as a small team passionate about AI, IoT, and full-stack development, and have grown to serve clients worldwide.
+        
+        Our journey began with a focus on eco-conscious technology solutions, and we've maintained that commitment while expanding our expertise across multiple domains.
+  utter_company_info:
+    - text: |
+        Eco Fusion is a technology company specializing in AI & Automation, IoT Solutions, and Full-Stack Development. We're passionate about creating sustainable, innovative solutions that drive business growth.
+        
+        **What We Do:**
+        🤖 AI & Automation - Chatbots, RPA, Predictive Analytics
+        🏠 IoT Solutions - Smart Home, Industrial IoT, Energy Monitoring
+        💻 Full-Stack Development - Web Apps, Mobile Apps, SaaS Platforms
+        
+        **Our Mission:** To transform ideas into sustainable digital solutions that help businesses thrive in the modern world.
+        
+        **Why Choose Us:** We combine cutting-edge technology with eco-conscious practices, ensuring your solutions are both powerful and sustainable.
+  utter_github_profile:
+    - text: |
+        I'm a passionate developer with a strong focus on AI, IoT, and full-stack development. My GitHub profile showcases my work in various projects, including:
+
+        🤖 **AI & Machine Learning:**
+        - **Advanced Stock Pattern Prediction** - LSTM with Attention Mechanism in TensorFlow
+        - **Million-Parameter LLM** - Built from scratch using Python
+        - **BERT Implementation** - TensorFlow code and pre-trained models
+        - **AI Text Prediction Dashboard** - Real-time prediction with Hugging Face
+
+        📱 **Mobile Applications:**
+        - **Elderly Care Companion** - Flutter app for elderly support with medication management and AI conversations
+
+        🌐 **Web Applications:**
+        - **Valentine's Day Experiment** - Interactive web app with cute bear interface
+
+        💻 **Full-Stack & Other Projects:**
+        - Various repositories demonstrating expertise in multiple technologies
+
+        You can view all my projects at: https://github.com/Abdullah007bajwa
+        
+        Would you like to discuss any specific project or technology stack for your business needs?
+  utter_connect_human:
+    - text: "Sure! Please email us at ecofusion.net@gmail.com or share your email and we'll reach out."
+  utter_handoff_ack:
+    - text: "I understand you'd like to speak with a human agent. Let me connect you with our team."
+  utter_agent_coming:
+    - text: "A human agent will be with you shortly. In the meantime, I can continue helping with general questions about Eco Fusion's services."
+  utter_quote_preamble:
+    - text: "I'll help you get a quote for your project. Let me gather some information to provide an accurate estimate."
+  utter_proposal_ready:
+    - text: "I've generated a proposal for your project. Here's a summary of what we can deliver:"
+  utter_calendar_link:
+    - text: "Here's your booking link for a consultation:"
+  utter_ask_preferred_channel:
+    - text: "How should I reach you? WhatsApp, email, Telegram, or phone?"
+  utter_default:
+    - text: "Sorry, I didn't get that. You can ask about our services, projects, tech stack, or book a consultation."
+
+actions:
+  - action_handle_requirements
+  - action_llm_fallback
+  - action_quote_estimator
+  - action_generate_proposal
+  - action_create_calendar_link
+  - action_push_to_crm
+  - action_handoff_to_human
+  - action_handle_channel_switch
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

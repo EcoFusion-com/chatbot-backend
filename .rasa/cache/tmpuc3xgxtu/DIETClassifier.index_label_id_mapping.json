@@ -1,0 +1,18 @@
+{
+  "0": "affirm",
+  "1": "ask_ai_automation",
+  "2": "ask_fullstack_dev",
+  "3": "ask_iot_solutions",
+  "4": "ask_pricing",
+  "5": "ask_process",
+  "6": "ask_requirements_info",
+  "7": "ask_services",
+  "8": "bot_challenge",
+  "9": "deny",
+  "10": "goodbye",
+  "11": "greet",
+  "12": "mood_great",
+  "13": "mood_unhappy",
+  "14": "nlu_fallback",
+  "15": "provide_requirements"
+}

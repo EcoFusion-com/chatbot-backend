@@ -1,0 +1,113 @@
+#### Eco Fusion Test Stories
+#### This file contains tests to evaluate that your Eco Fusion assistant behaves as expected.
+#### Learn more: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: greeting test
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+
+- story: goodbye test
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot identity test
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: ask AI automation
+  steps:
+  - user: |
+      Can you automate my data entry tasks?
+    intent: ask_ai_automation
+  - action: utter_ai_automation
+
+- story: ask AI chatbot solutions
+  steps:
+  - user: |
+      Do you create chatbots for businesses?
+    intent: ask_ai_automation
+  - action: utter_ai_automation
+
+- story: ask IoT solutions
+  steps:
+  - user: |
+      Do you create smart home systems?
+    intent: ask_iot_solutions
+  - action: utter_iot_solutions
+
+- story: ask industrial IoT
+  steps:
+  - user: |
+      Can you build IoT systems for factories?
+    intent: ask_iot_solutions
+  - action: utter_iot_solutions
+
+- story: ask full-stack development
+  steps:
+  - user: |
+      Do you build SaaS platforms?
+    intent: ask_fullstack_dev
+  - action: utter_fullstack_dev
+
+- story: ask enterprise apps
+  steps:
+  - user: |
+      I need a custom enterprise application.
+    intent: ask_fullstack_dev
+  - action: utter_fullstack_dev
+
+- story: provide requirements IoT
+  steps:
+  - user: |
+      I want an IoT energy monitoring system for factories.
+    intent: provide_requirements
+  - action: utter_ack_requirements
+  - action: action_save_project_request
+
+- story: provide requirements AI
+  steps:
+  - user: |
+      I want an AI agent that can answer client queries automatically.
+    intent: provide_requirements
+  - action: utter_ack_requirements
+  - action: action_save_project_request
+
+- story: provide requirements Full-stack
+  steps:
+  - user: |
+      I want a SaaS platform to manage my employees.
+    intent: provide_requirements
+  - action: utter_ack_requirements
+  - action: action_save_project_request
+
+- story: fallback nonsense
+  steps:
+  - user: |
+      asdkljweoiurq
+    intent: nlu_fallback
+  - action: utter_fallback
+
+- story: fallback wrong intent
+  steps:
+  - user: |
+      unicorn rocket pizza
+    intent: nlu_fallback
+  - action: utter_fallback
+
+- story: mixed service query
+  steps:
+  - user: |
+      Can you build a chatbot for healthcare and connect it with IoT devices?
+    intent: ask_ai_automation
+  - action: utter_ai_automation
+  - action: utter_iot_solutions

@@ -1,0 +1,72 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "ask_pricing": 1,
+        "ask_process": 2,
+        "ask_services": 3,
+        "back": 4,
+        "bot_challenge": 5,
+        "deny": 6,
+        "goodbye": 7,
+        "greet": 8,
+        "mood_great": 9,
+        "mood_unhappy": 10,
+        "nlu_fallback": 11,
+        "out_of_scope": 12,
+        "provide_requirements": 13,
+        "restart": 14,
+        "session_start": 15
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_handle_requirements": 13,
+        "action_llm_fallback": 14,
+        "utter_ask_missing_info": 15,
+        "utter_ask_requirements": 16,
+        "utter_cheer_up": 17,
+        "utter_confirm_requirements": 18,
+        "utter_consultation_link": 19,
+        "utter_did_that_help": 20,
+        "utter_goodbye": 21,
+        "utter_greet": 22,
+        "utter_happy": 23,
+        "utter_iamabot": 24,
+        "utter_pricing": 25,
+        "utter_process": 26,
+        "utter_services": 27
+      },
+      "entities": {
+        "budget": 0,
+        "industry": 1,
+        "technology": 2,
+        "timeline": 3
+      },
+      "slots": {
+        "industry_0": 0,
+        "budget_0": 1,
+        "timeline_0": 2,
+        "technology_0": 3
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

@@ -1,0 +1,404 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - hello there
+    - hi there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - talk later
+    - thanks, bye
+
+- intent: ask_services
+  examples: |
+    - What services do you provide?
+    - Tell me about Eco Fusion
+    - What can Eco Fusion do?
+    - What does your company offer?
+    - Services list
+    - Do you build AI agents?
+    - Do you create chatbots?
+    - Do you provide IoT solutions?
+    - Describe your AI & Automation services
+    - Explain your IoT offerings
+    - Do you build SaaS platforms?
+
+- intent: ask_pricing
+  examples: |
+    - How much does it cost?
+    - pricing
+    - What are your rates?
+    - Do you have pricing plans?
+    - price estimate
+
+- intent: ask_process
+  examples: |
+    - What's your development process?
+    - How do you work with clients?
+    - project methodology
+    - Do you follow agile?
+
+- intent: ask_requirements_info
+  examples: |
+    - What information do you need to start my project?
+    - What requirements do you need from me?
+    - What details should I provide to get a quote?
+    - What do you need from our side to begin?
+    - What inputs do you need to scope the project?
+
+- intent: ask_ai_automation
+  examples: |
+    - What AI services do you offer?
+    - Can you build a chatbot for my website?
+    - Do you provide predictive analytics solutions?
+    - How does RPA work in your automation services?
+    - Can AI improve my business processes?
+    - Do you make AI agents for customer support?
+    - Can you automate my data entry tasks?
+    - What's the difference between your chatbots and others?
+    - Do you offer AI-driven recommendations for E-commerce?
+    - Can you integrate AI into my existing CRM?
+    - Do you build voice-based assistants?
+    - I need AI for manufacturing — can you help?
+    - Is AI affordable for small businesses?
+    - How long does it take to develop an AI solution?
+    - Can you explain AI automation in simple terms?
+    - Do you provide preditive analyics?
+    - I want a chatbot and automation for my factory.
+
+- intent: ask_iot_solutions
+  examples: |
+    - Do you create smart home systems?
+    - Can you develop IoT solutions for factories?
+    - How do you monitor energy consumption using IoT?
+    - Can you integrate IoT with mobile apps?
+    - Do you provide industrial IoT platforms?
+    - What's your experience with home automation?
+    - Can you install IoT sensors for agriculture?
+    - Do you offer predictive maintenance for IoT?
+    - How secure are your IoT solutions?
+    - Can IoT reduce my electricity bills?
+    - Do you work on smart city projects?
+    - How do you ensure data privacy in IoT devices?
+    - Can you build IoT dashboards for real-time analytics?
+    - What hardware do you use for IoT solutions?
+    - Do you offer end-to-end IoT implementation?
+    - Do you offer AI-powered IoT devices?
+    - Can you do internet of things wifi stuff?
+
+- intent: ask_fullstack_dev
+  examples: |
+    - Do you build SaaS platforms?
+    - Can you develop custom enterprise apps?
+    - Do you offer web and mobile app development?
+    - Which tech stack do you use for backend?
+    - Can you create a responsive web app for my business?
+    - Do you build dashboards for data visualization?
+    - How do you handle API integrations?
+    - Do you develop cloud-based platforms?
+    - Can you integrate payment gateways?
+    - Do you offer frontend and backend both?
+    - What frameworks do you use for full-stack development?
+    - Do you develop apps with AI features?
+    - Can you build an ERP system for my company?
+    - How do you ensure scalability in your apps?
+    - Do you provide maintenance for custom apps?
+    - Can you code something for me?
+    - Do you work with Django or MERN?
+
+- intent: ask_projects_portfolio
+  examples: |
+    - Can you show me your projects?
+    - What projects have you completed?
+    - Show me your portfolio
+    - What are some examples of your work?
+    - Do you have case studies?
+    - Can I see your previous work?
+    - What kind of projects do you do?
+    - Show me your past projects
+    - What have you built before?
+    - Can you share some project examples?
+    - Do you have a portfolio?
+    - What are your best projects?
+    - Can I see your work samples?
+
+- intent: ask_programming_languages
+  examples: |
+    - What programming languages do you use?
+    - Which languages do you work with?
+    - What languages do you code in?
+    - Do you use Python?
+    - Do you work with JavaScript?
+    - Can you code in Java?
+    - What languages do you know?
+    - Do you use C#?
+    - Can you work with PHP?
+    - What programming languages do you support?
+    - Do you use TypeScript?
+    - Can you develop in Go?
+    - What languages are you proficient in?
+
+- intent: ask_frameworks
+  examples: |
+    - What frameworks do you work with?
+    - Tell me about frameworks you use
+    - Which frameworks do you use?
+    - Do you use React?
+    - Do you work with Django?
+    - Can you use Node.js?
+    - What frameworks do you know?
+    - Do you use Angular?
+    - Can you work with Vue.js?
+    - What frameworks do you support?
+    - Do you use Express.js?
+    - Can you develop with Flask?
+    - What frameworks are you proficient in?
+    - Do you use .NET?
+    - Can you work with Laravel?
+
+- intent: ask_csharp
+  examples: |
+    - Can you make project in C#?
+    - Do you work with C#?
+    - Can you develop in C#?
+    - Do you use .NET?
+    - Can you build C# applications?
+    - Do you work with ASP.NET?
+    - Can you create C# projects?
+    - Do you use C# for development?
+    - Can you build .NET applications?
+    - Do you work with C# and .NET?
+
+- intent: ask_cloud_technologies
+  examples: |
+    - What cloud technologies do you use?
+    - Which cloud platforms do you work with?
+    - Do you use AWS?
+    - Do you work with Azure?
+    - Can you deploy to Google Cloud?
+    - What cloud services do you use?
+    - Do you use cloud deployment?
+    - Which cloud providers do you support?
+    - Can you work with Docker?
+    - Do you use Kubernetes?
+    - What cloud technologies do you know?
+    - Do you use serverless?
+    - Can you work with cloud databases?
+
+- intent: ask_consultation
+  examples: |
+    - Can I get free consultation?
+    - Do you offer free consultation?
+    - Is consultation free?
+    - Can I get a free consultation?
+    - Do you provide free consultation?
+    - Is there a free consultation?
+    - Can I get free advice?
+    - Do you offer free advice?
+    - Is consultation free of charge?
+    - Can I get a free consultation call?
+
+- intent: ask_working_hours
+  examples: |
+    - What are your working hours?
+    - When are you available?
+    - What are your business hours?
+    - When do you work?
+    - What are your office hours?
+    - When are you open?
+    - What time do you work?
+    - When can I contact you?
+    - What are your hours?
+    - When do you operate?
+
+- intent: ask_company_founded
+  examples: |
+    - When was Eco Fusion founded?
+    - When did Eco Fusion start?
+    - How long has Eco Fusion been around?
+    - When was Eco Fusion established?
+    - How old is Eco Fusion?
+    - When did Eco Fusion begin?
+    - What year was Eco Fusion founded?
+    - How long has Eco Fusion existed?
+    - When did Eco Fusion start operating?
+    - What's Eco Fusion's founding date?
+
+- intent: ask_company_info
+  examples: |
+    - Tell me about Eco Fusion
+    - What is Eco Fusion?
+    - Who is Eco Fusion?
+    - What does Eco Fusion do?
+    - Tell me about your company
+    - What kind of company is Eco Fusion?
+    - What is your company about?
+    - Who are you?
+    - What do you do?
+    - Tell me about your business
+
+- intent: ask_github_profile
+  examples: |
+    - Can I see your GitHub?
+    - What's your GitHub profile?
+    - Show me your GitHub
+    - Do you have a GitHub?
+    - Can I check your repositories?
+    - What's your GitHub username?
+    - Show me your code
+    - Can I see your repositories?
+    - What's on your GitHub?
+    - Do you have public repositories?
+    - Can I view your GitHub profile?
+    - Show me your GitHub projects
+    - What repositories do you have?
+    - Can I see your GitHub work?
+    - Do you have a public GitHub?
+
+- intent: provide_requirements
+  examples: |
+    - I need an AI chatbot for E-commerce with WhatsApp integration.
+    - I want a full-stack SaaS app for healthcare.
+    - Build me an IoT energy monitoring system for factories.
+    - My budget is $5000, can you do a predictive analytics project?
+    - Project timeline is 3 months, is that possible?
+    - Use React for frontend and Django for backend.
+    - Do you support cloud deployment on AWS?
+    - Can you integrate Stripe for payments?
+    - I want automation for invoice generation.
+    - Build a smart home app with voice commands.
+    - Develop ERP with AI forecasting features.
+    - Create a dashboard for IoT sensors.
+    - Can you make it scalable for 10k users?
+    - I need WhatsApp bot with appointment booking.
+    - I want to start with MVP — can you handle it?
+    - We are in the [healthcare](industry) industry, budget is [50k](budget), timeline [3 months](timeline), tech [Python](technology)
+    - Industry is [ecommerce](industry), [JavaScript](technology), budget [$20,000](budget), deliver in [Q4](timeline)
+    - [manufacturing](industry) project, [RPA](technology), [2 months](timeline), around [100k](budget)
+    - [fintech](industry) startup, [React](technology), [6 months](timeline), budget [50000](budget)
+    - Project size is [small](project_size)
+    - This is a [medium](project_size) sized project
+    - We need a [large](project_size) scale solution
+    - Compliance requirements are [standard](compliance)
+    - We need [strict](compliance) compliance
+    - No special [compliance](compliance) requirements
+
+- intent: nlu_fallback
+  examples: |
+    - asdfghjkl
+    - qwerty uiop
+    - random text that makes no sense
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - are you real?
+
+- intent: mood_great
+  examples: |
+    - amazing
+    - I am feeling great
+    - so good
+
+- intent: mood_unhappy
+  examples: |
+    - not good
+    - very terrible
+    - sad
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - not really
+    - don't think so
+
+- intent: connect_human
+  examples: |
+    - connect me to a human
+    - I want to speak to a person
+    - human support
+    - contact a human agent
+    - talk to a human please
+- intent: handoff_request
+  examples: |
+    - I need to speak with a human
+    - transfer me to a human agent
+    - can I talk to a real person
+    - I want to speak to someone
+    - connect me to a human agent
+    - hand me over to a human
+    - I need human assistance
+    - transfer to human
+    - speak to human
+    - human agent please
+- intent: ask_quote
+  examples: |
+    - I need a quote for my project
+    - what would this cost
+    - how much would this project cost
+    - give me a price estimate
+    - what's the cost for this
+    - I need pricing information
+    - how much does this cost
+    - what's your pricing
+    - get me a quote
+    - price estimate please
+    - how much will this cost me
+    - what's the budget for this
+    - cost estimate
+    - pricing quote
+    - project cost
+- intent: book_meeting
+  examples: |
+    - I want to book a meeting
+    - schedule a consultation
+    - book a call
+    - schedule a meeting
+    - I need to book a meeting
+    - can we schedule a call
+    - book consultation
+    - schedule call
+    - meeting booking
+    - book appointment
+    - schedule appointment
+    - I want to meet
+    - book a time
+    - schedule time
+    - meeting request
+- intent: restart
+  examples: |
+    - restart
+    - restart the conversation
+    - start over
+    - reset chat
+
+- intent: channel_switch
+  examples: |
+    - contact me on WhatsApp
+    - can you text me on whatsapp?
+    - please message me on whatsapp
+    - reach me on telegram
+    - contact me on telegram
+    - send me an email
+    - email me the details
+    - contact me via email
+    - call me on my phone
+    - give me a phone call
+

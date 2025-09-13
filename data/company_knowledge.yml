@@ -1,0 +1,191 @@
+# Eco Fusion Company Knowledge Base
+# This file contains comprehensive information about Eco Fusion for the chatbot
+
+company_info:
+  name: "Eco Fusion"
+  founded: "2021"
+  mission: "To transform ideas into sustainable digital solutions that help businesses thrive in the modern world"
+  vision: "Creating sustainable, innovative technology solutions"
+  focus: "AI & Automation, IoT Solutions, and Full-Stack Development"
+  
+  contact:
+    email: "ecofusion.net@gmail.com"
+    phone: "+1 (555) 123-4567"
+    address: "123 Tech Street, Silicon Valley"
+    website: "https://ecofusion.com"
+    
+  social_media:
+    github: "https://github.com/EcoFusion-com"
+    linkedin: "https://www.linkedin.com/company/ecofusion-com"
+    twitter: "#"
+    
+  working_hours:
+    monday_friday: "9:00 AM - 6:00 PM (EST)"
+    saturday: "10:00 AM - 4:00 PM (EST)"
+    sunday: "Closed"
+    emergency_support: "Available outside business hours"
+
+services:
+  ai_automation:
+    description: "AI & Automation solutions including chatbots, RPA, and predictive analytics"
+    offerings:
+      - "AI-powered chatbots with WhatsApp integration"
+      - "Predictive analytics dashboards"
+      - "RPA (Robotic Process Automation) systems"
+      - "Voice assistants and speech recognition"
+      - "AI-driven recommendation engines"
+      - "CRM/ERP integration with AI"
+      - "Automated data entry and processing"
+      - "Invoice automation systems"
+    
+  iot_solutions:
+    description: "End-to-end IoT solutions for smart homes, industrial applications, and energy monitoring"
+    offerings:
+      - "Smart home automation systems"
+      - "Industrial IoT platforms"
+      - "Energy monitoring and optimization"
+      - "Predictive maintenance systems"
+      - "Agricultural IoT sensor networks"
+      - "Real-time IoT dashboards"
+      - "Secure device integration"
+      - "Smart city solutions"
+    
+  fullstack_development:
+    description: "Complete web and mobile application development with modern technologies"
+    offerings:
+      - "Responsive web applications"
+      - "Mobile apps (iOS/Android)"
+      - "SaaS platforms"
+      - "E-commerce solutions"
+      - "Enterprise applications"
+      - "API development and integration"
+      - "Payment gateway integration"
+      - "Cloud-native applications"
+
+technologies:
+  programming_languages:
+    frontend: ["JavaScript", "TypeScript", "HTML5", "CSS3"]
+    backend: ["Python", "Node.js", "Java", "C#", "PHP", "Go"]
+    mobile: ["React Native", "Flutter", "Swift", "Kotlin", "Dart"]
+    
+  frameworks:
+    frontend: ["React", "Vue.js", "Angular", "Next.js", "Nuxt.js"]
+    backend: ["Django", "Express.js", "ASP.NET Core", "Laravel", "Flask", "Spring Boot"]
+    mobile: ["React Native", "Flutter", "Ionic"]
+    cms: ["WordPress", "Strapi", "Drupal"]
+    ecommerce: ["Shopify", "WooCommerce", "Magento"]
+    
+  databases:
+    relational: ["PostgreSQL", "MySQL", "SQL Server", "Oracle"]
+    nosql: ["MongoDB", "Redis", "Cassandra", "DynamoDB"]
+    
+  cloud_platforms:
+    providers: ["AWS", "Azure", "Google Cloud Platform"]
+    services:
+      - "Serverless computing (Lambda, Functions)"
+      - "Container orchestration (Kubernetes, Docker)"
+      - "Database services (RDS, SQL, MongoDB Atlas)"
+      - "Storage solutions (S3, Blob Storage)"
+      - "CDN and content delivery"
+      - "Monitoring and logging"
+      
+  devops:
+    tools: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Terraform"]
+    practices: ["CI/CD", "Infrastructure as Code", "Microservices", "Containerization"]
+
+projects_portfolio:
+  total_projects: "32+"
+  success_rate: "95%"
+  github_profile: "https://github.com/Abdullah007bajwa"
+  
+  ai_automation_projects:
+    - name: "Advanced Stock Pattern Prediction"
+      description: "LSTM with Attention Mechanism in TensorFlow for stock pattern prediction"
+      technologies: ["Python", "TensorFlow", "LSTM", "Attention Mechanism", "Machine Learning"]
+      github: "https://github.com/Abdullah007bajwa/Advanced-Stock-Pattern-Prediction-using-LSTM-with-Attention-Mechanism-in-TensorFlow"
+      
+    - name: "Million-Parameter LLM"
+      description: "Building a Million-Parameter LLM from scratch using Python"
+      technologies: ["Python", "Natural Language Processing", "Deep Learning", "Jupyter Notebook"]
+      github: "https://github.com/Abdullah007bajwa/Million-Parameter-LLM"
+      
+    - name: "BERT Implementation"
+      description: "TensorFlow code and pre-trained models for BERT"
+      technologies: ["Python", "TensorFlow", "BERT", "NLP", "Transformer Models"]
+      github: "https://github.com/Abdullah007bajwa/bert"
+      
+    - name: "AI Text Prediction Dashboard"
+      description: "AI-powered, real-time text prediction dashboard with Hugging Face integration"
+      technologies: ["Python", "Hugging Face", "AI/ML", "Dashboard", "Real-time"]
+      github: "https://github.com/Abdullah007bajwa/cuddly-fortnight"
+  
+  mobile_applications:
+    - name: "Elderly Care Companion"
+      description: "Comprehensive companion app for elderly support with medication management, appointments, daily tasks, and AI-driven conversations"
+      technologies: ["Dart", "Flutter", "Mobile Development", "Healthcare", "AI Integration"]
+      github: "https://github.com/Abdullah007bajwa/Elderly_Care_Companion"
+      
+  web_applications:
+    - name: "Valentine's Day Experiment"
+      description: "Interactive web app with cute bear interface for Valentine's Day"
+      technologies: ["CSS", "JavaScript", "Web Development", "Interactive UI"]
+      github: "https://github.com/Abdullah007bajwa/Valentines-Day-Experiment"
+  
+  iot_projects:
+    - name: "Smart Home Automation"
+      description: "Complete home automation system with mobile app control"
+      technologies: ["IoT sensors", "React Native", "Node.js", "MongoDB"]
+      
+    - name: "Industrial Energy Monitor"
+      description: "Real-time energy monitoring platform for factories"
+      technologies: ["IoT sensors", "Python", "React", "InfluxDB"]
+      
+    - name: "Agricultural IoT Network"
+      description: "Sensor network for crop monitoring and irrigation control"
+      technologies: ["IoT sensors", "LoRaWAN", "Python", "Vue.js"]
+  
+  fullstack_projects:
+    - name: "Healthcare SaaS Platform"
+      description: "Comprehensive healthcare management system"
+      technologies: ["React", "Django", "PostgreSQL", "AWS"]
+      
+    - name: "E-commerce Marketplace"
+      description: "Multi-vendor e-commerce platform"
+      technologies: ["Next.js", "Node.js", "MongoDB", "Stripe"]
+      
+    - name: "Real-time Analytics Dashboard"
+      description: "Business intelligence dashboard with real-time data"
+      technologies: ["React", "Python", "Redis", "Docker"]
+
+pricing:
+  model: "Project-based pricing"
+  factors: ["Project scope", "Technology complexity", "Timeline", "Team size"]
+  consultation: "Free initial consultation"
+  payment: "Flexible payment terms available"
+  
+process:
+  methodology: "Agile development"
+  phases:
+    - "Discovery and Planning"
+    - "Design and Prototyping"
+    - "Development and Testing"
+    - "Deployment and Launch"
+    - "Maintenance and Support"
+  
+  communication: "Regular updates and transparent communication"
+  quality: "Rigorous testing and quality assurance"
+  delivery: "On-time delivery with milestone tracking"
+
+team:
+  expertise: "Experienced developers, designers, and project managers"
+  approach: "Collaborative and client-focused"
+  values: ["Innovation", "Sustainability", "Quality", "Transparency"]
+  lead_developer: "Abdullah Bajwa - Full-stack developer with expertise in AI/ML, mobile development, and web applications"
+
+achievements:
+  - "32+ repositories on GitHub showcasing diverse technical skills"
+  - "95% client satisfaction rate"
+  - "3+ years of experience"
+  - "Served clients worldwide"
+  - "Eco-conscious technology solutions"
+  - "Expertise in AI/ML, mobile development, and full-stack applications"

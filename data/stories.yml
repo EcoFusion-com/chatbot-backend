@@ -1,0 +1,155 @@
+version: "3.1"
+
+stories:
+- story: faq services flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_services
+  - action: utter_services
+
+- story: pricing flow
+  steps:
+  - intent: ask_pricing
+  - action: utter_pricing
+
+- story: process flow
+  steps:
+  - intent: ask_process
+  - action: utter_process
+
+- story: requirement collection and confirmation
+  steps:
+  - intent: provide_requirements
+  - action: action_handle_requirements
+  - action: utter_confirm_requirements
+  - action: utter_consultation_link
+
+- story: farewell
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: AI automation inquiry
+  steps:
+  - intent: ask_ai_automation
+  - action: utter_ai_automation
+
+- story: IoT solutions inquiry
+  steps:
+  - intent: ask_iot_solutions
+  - action: utter_iot_solutions
+
+- story: Full-stack development inquiry
+  steps:
+  - intent: ask_fullstack_dev
+  - action: utter_fullstack_dev
+
+- story: Projects and portfolio inquiry
+  steps:
+  - intent: ask_projects_portfolio
+  - action: utter_projects_portfolio
+
+- story: Programming languages inquiry
+  steps:
+  - intent: ask_programming_languages
+  - action: utter_programming_languages
+
+- story: Frameworks inquiry
+  steps:
+  - intent: ask_frameworks
+  - action: utter_frameworks
+
+- story: C# development inquiry
+  steps:
+  - intent: ask_csharp
+  - action: utter_csharp
+
+- story: Cloud technologies inquiry
+  steps:
+  - intent: ask_cloud_technologies
+  - action: utter_cloud_technologies
+
+- story: Free consultation inquiry
+  steps:
+  - intent: ask_consultation
+  - action: utter_consultation
+
+- story: Working hours inquiry
+  steps:
+  - intent: ask_working_hours
+  - action: utter_working_hours
+
+- story: Company founding inquiry
+  steps:
+  - intent: ask_company_founded
+  - action: utter_company_founded
+
+- story: Company information inquiry
+  steps:
+  - intent: ask_company_info
+  - action: utter_company_info
+
+- story: Requirements information inquiry
+  steps:
+  - intent: ask_requirements_info
+  - action: utter_requirements_info
+
+- story: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: Happy mood
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: Unhappy mood
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: Complex conversation flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_company_info
+  - action: utter_company_info
+  - intent: ask_projects_portfolio
+  - action: utter_projects_portfolio
+  - intent: ask_consultation
+  - action: utter_consultation
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: GitHub profile inquiry
+  steps:
+  - intent: ask_github_profile
+  - action: utter_github_profile
+
+- story: Handoff request
+  steps:
+  - intent: handoff_request
+  - action: action_handoff_to_human
+
+- story: Quote request
+  steps:
+  - intent: ask_quote
+  - action: action_quote_estimator
+
+- story: Meeting booking
+  steps:
+  - intent: book_meeting
+  - action: action_create_calendar_link
+
+- story: Complex quote flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_quote
+  - action: action_quote_estimator
+  - intent: provide_requirements
+  - action: action_handle_requirements
+  - action: utter_confirm_requirements
+  - action: utter_consultation_link

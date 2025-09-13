@@ -1,0 +1,37 @@
+version: "3.8"
+services:
+  rasa:
+    image: rasa/rasa:3.6.16
+    command: ["run", "--enable-api", "--cors", "*", "--port", "5005"]
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    environment:
+      - RASA_TELEMETRY_ENABLED=false
+    depends_on:
+      - actions
+
+  actions:
+    image: rasa/rasa-sdk:3.6.2
+    command: ["start", "--actions", "actions.actions", "--port", "5055"]
+    ports:
+      - "5055:5055"
+    volumes:
+      - ./:/app
+    env_file:
+      - .env
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-eco}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-eco}
+      - POSTGRES_DB=${POSTGRES_DB:-eco}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

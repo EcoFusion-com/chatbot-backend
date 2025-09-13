@@ -1,0 +1,151 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: greet rule
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: ask services rule
+  steps:
+  - intent: ask_services
+  - action: utter_services
+
+- rule: ask pricing rule
+  steps:
+  - intent: ask_pricing
+  - action: utter_pricing
+
+- rule: ask process rule
+  steps:
+  - intent: ask_process
+  - action: utter_process
+
+- rule: ask ai automation rule
+  steps:
+  - intent: ask_ai_automation
+  - action: utter_ai_automation
+
+- rule: ask iot solutions rule
+  steps:
+  - intent: ask_iot_solutions
+  - action: utter_iot_solutions
+
+- rule: ask fullstack dev rule
+  steps:
+  - intent: ask_fullstack_dev
+  - action: utter_fullstack_dev
+
+- rule: ask requirements info rule
+  steps:
+  - intent: ask_requirements_info
+  - action: utter_requirements_info
+
+- rule: handle requirements rule
+  steps:
+  - intent: provide_requirements
+  - action: action_handle_requirements
+  - action: utter_confirm_requirements
+  - action: utter_consultation_link
+
+- rule: llm fallback on low confidence or fallback intent
+  steps:
+  - intent: nlu_fallback
+  - action: action_llm_fallback
+
+- rule: bot challenge rule
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# New FAQ intent rules
+- rule: ask projects
+  steps:
+  - intent: ask_projects_portfolio
+  - action: utter_projects_portfolio
+
+- rule: ask programming languages
+  steps:
+  - intent: ask_programming_languages
+  - action: utter_programming_languages
+
+- rule: ask frameworks
+  steps:
+  - intent: ask_frameworks
+  - action: utter_frameworks
+
+- rule: ask csharp
+  steps:
+  - intent: ask_csharp
+  - action: utter_csharp
+
+- rule: ask cloud
+  steps:
+  - intent: ask_cloud_technologies
+  - action: utter_cloud_technologies
+
+- rule: ask consultation
+  steps:
+  - intent: ask_consultation
+  - action: utter_consultation
+
+- rule: ask working hours
+  steps:
+  - intent: ask_working_hours
+  - action: utter_working_hours
+
+- rule: ask company founded
+  steps:
+  - intent: ask_company_founded
+  - action: utter_company_founded
+
+- rule: ask company info
+  steps:
+  - intent: ask_company_info
+  - action: utter_company_info
+
+- rule: ask github profile
+  steps:
+  - intent: ask_github_profile
+  - action: utter_github_profile
+
+# Core default fallback (decoupled from LLM)
+- rule: core default fallback
+  steps:
+  - action: action_default_fallback
+  - action: utter_default
+
+# New: connect human
+- rule: connect human
+  steps:
+  - intent: connect_human
+  - action: utter_connect_human
+
+# New: handoff request
+- rule: handoff request
+  steps:
+  - intent: handoff_request
+  - action: action_handoff_to_human
+
+# New: ask quote
+- rule: ask quote
+  steps:
+  - intent: ask_quote
+  - action: action_quote_estimator
+
+# New: book meeting
+- rule: book meeting
+  steps:
+  - intent: book_meeting
+  - action: action_create_calendar_link
+
+- rule: Handle channel switch preference
+  steps:
+    - intent: channel_switch
+    - action: action_handle_channel_switch

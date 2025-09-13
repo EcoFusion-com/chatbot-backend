@@ -1,0 +1,80 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "ask_ai_automation": 1,
+        "ask_fullstack_dev": 2,
+        "ask_iot_solutions": 3,
+        "ask_pricing": 4,
+        "ask_process": 5,
+        "ask_requirements_info": 6,
+        "ask_services": 7,
+        "back": 8,
+        "bot_challenge": 9,
+        "deny": 10,
+        "goodbye": 11,
+        "greet": 12,
+        "mood_great": 13,
+        "mood_unhappy": 14,
+        "nlu_fallback": 15,
+        "out_of_scope": 16,
+        "provide_requirements": 17,
+        "restart": 18,
+        "session_start": 19
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_handle_requirements": 13,
+        "action_llm_fallback": 14,
+        "utter_ai_automation": 15,
+        "utter_ask_missing_info": 16,
+        "utter_ask_requirements": 17,
+        "utter_cheer_up": 18,
+        "utter_confirm_requirements": 19,
+        "utter_consultation_link": 20,
+        "utter_did_that_help": 21,
+        "utter_fullstack_dev": 22,
+        "utter_goodbye": 23,
+        "utter_greet": 24,
+        "utter_happy": 25,
+        "utter_iamabot": 26,
+        "utter_iot_solutions": 27,
+        "utter_pricing": 28,
+        "utter_process": 29,
+        "utter_requirements_info": 30,
+        "utter_services": 31
+      },
+      "entities": {
+        "budget": 0,
+        "industry": 1,
+        "technology": 2,
+        "timeline": 3
+      },
+      "slots": {
+        "industry_0": 0,
+        "budget_0": 1,
+        "timeline_0": 2,
+        "technology_0": 3
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
