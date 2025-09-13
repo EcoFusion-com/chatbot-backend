@@ -1,22 +1,22 @@
 # Core Rasa dependencies
-rasa==3.6.15
-requests==2.31.0
-python-dotenv==1.0.0
+rasa
+requests
+python-dotenv
 
 # Communication integrations
-twilio==8.10.0
-slack_sdk==3.23.0
-python-telegram-bot==20.7
+twilio
+slack_sdk
+python-telegram-bot
 
 # Google Calendar integration
-google-api-python-client==2.108.0
-google-auth-httplib2==0.2.0
-google-auth-oauthlib==1.1.0
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
 
 # Database
-sqlalchemy==2.0.23
-psycopg2-binary==2.9.9
+sqlalchemy
+psycopg2-binary
 
 # Additional utilities
-pydantic==2.5.0
-typing-extensions==4.8.0
+pydantic
+typing-extensions
